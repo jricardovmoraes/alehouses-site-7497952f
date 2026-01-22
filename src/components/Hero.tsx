@@ -26,7 +26,7 @@ const content = {
     subtitle: "Ci Prendiamo Cura di Tutto per Te",
     description: "Servizi immobiliari specializzati nell'assistenza agli stranieri che desiderano acquistare proprietà in Portogallo, con supporto completo in ogni fase.",
     cta1: "Scopri le Opportunità",
-    cta2: "Parla con Alexandra",
+    cta2: "Parla con Roberto",
   },
 };
 
