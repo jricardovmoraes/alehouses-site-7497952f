@@ -10,15 +10,15 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
-  const [language, setLanguage] = useState<'pt' | 'en'>('pt');
+  const [language, setLanguage] = useState<'pt' | 'en' | 'it'>('pt');
 
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === 'pt' ? 'en' : 'pt');
+  const setLang = (lang: 'pt' | 'en' | 'it') => {
+    setLanguage(lang);
   };
 
   return (
     <div className="min-h-screen">
-      <Navbar language={language} onLanguageToggle={toggleLanguage} />
+      <Navbar language={language} onLanguageChange={setLang} />
       <Hero language={language} />
       <About language={language} />
       <HowItWorks language={language} />

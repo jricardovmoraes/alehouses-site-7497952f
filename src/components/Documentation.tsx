@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle, Info } from "lucide-react";
 
 interface DocumentationProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -32,6 +32,20 @@ const content = {
       "Marriage certificate",
       "Proof of residence",
       "Declaration of source of funds",
+    ],
+  },
+  it: {
+    title: "Documentazione Necessaria",
+    subtitle: "Cosa serve per acquistare un immobile in Portogallo",
+    intro: "Informazioni chiare e oggettive per stranieri:",
+    note: "Parte della documentazione può essere ottenuta da remoto, con supporto diretto del team Alehouses.",
+    docs: [
+      "Passaporto e NIF (Codice Fiscale)",
+      "Prova di reddito o pensione",
+      "Estratto conto bancario recente",
+      "Certificato di stato civile",
+      "Prova di residenza",
+      "Dichiarazione di origine dei fondi",
     ],
   },
 };

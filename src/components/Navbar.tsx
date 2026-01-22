@@ -4,8 +4,8 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
-  language: 'pt' | 'en';
-  onLanguageToggle: () => void;
+  language: 'pt' | 'en' | 'it';
+  onLanguageChange: (lang: 'pt' | 'en' | 'it') => void;
 }
 
 const content = {
@@ -27,9 +27,18 @@ const content = {
     rehabilitation: "Urban Rehabilitation",
     contact: "Contact",
   },
+  it: {
+    home: "Home",
+    about: "Chi Siamo",
+    howItWorks: "Come Funziona",
+    documentation: "Documentazione",
+    financing: "Finanziamento",
+    rehabilitation: "Riqualificazione Urbana",
+    contact: "Contatto",
+  },
 };
 
-export const Navbar = ({ language, onLanguageToggle }: NavbarProps) => {
+export const Navbar = ({ language, onLanguageChange }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const t = content[language];
 
@@ -70,7 +79,7 @@ export const Navbar = ({ language, onLanguageToggle }: NavbarProps) => {
                 {item.label}
               </button>
             ))}
-            <LanguageToggle language={language} onToggle={onLanguageToggle} />
+            <LanguageToggle language={language} onLanguageChange={onLanguageChange} />
             <Button variant="hero" onClick={() => scrollToSection("#contact")}>
               {t.contact}
             </Button>
@@ -78,7 +87,7 @@ export const Navbar = ({ language, onLanguageToggle }: NavbarProps) => {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-2">
-            <LanguageToggle language={language} onToggle={onLanguageToggle} />
+            <LanguageToggle language={language} onLanguageChange={onLanguageChange} />
             <Button
               variant="ghost"
               size="icon"

@@ -3,7 +3,7 @@ import { Shield, Users, TrendingUp, Award } from "lucide-react";
 import alexandraImage from "@/assets/alexandra.jpg";
 
 interface AboutProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -38,6 +38,22 @@ const content = {
     value3Text: "Clear and honest communication",
     value4: "Excellence",
     value4Text: "Personalized support",
+  },
+  it: {
+    title: "Chi Siamo",
+    subtitle: "Esperienza e Fiducia",
+    intro: "Vi presentiamo Alexandra Betting Chaves, professionista con oltre 30 anni di esperienza commerciale e 15 anni dedicati a startup e investimenti immobiliari.",
+    mission: "La Nostra Missione",
+    missionText: "Connettere stranieri e investitori a immobili ad alto potenziale in Portogallo, con supporto completo in ogni fase del processo.",
+    values: "I Nostri Valori",
+    value1: "Fiducia",
+    value1Text: "Totale trasparenza in ogni transazione",
+    value2: "Etica",
+    value2Text: "Impegno per pratiche etiche",
+    value3: "Trasparenza",
+    value3Text: "Comunicazione chiara e onesta",
+    value4: "Eccellenza",
+    value4Text: "Supporto personalizzato",
   },
 };
 
