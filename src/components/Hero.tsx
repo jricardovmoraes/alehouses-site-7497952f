@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-villa.jpg";
 
 interface HeroProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -20,6 +20,13 @@ const content = {
     description: "Real estate services specialized in helping foreigners buy property in Portugal, with complete support at every stage.",
     cta1: "Discover Opportunities",
     cta2: "Talk to Alexandra",
+  },
+  it: {
+    title: "Investi in Sicurezza in Portogallo",
+    subtitle: "Ci Prendiamo Cura di Tutto per Te",
+    description: "Servizi immobiliari specializzati nell'assistenza agli stranieri che desiderano acquistare proprietà in Portogallo, con supporto completo in ogni fase.",
+    cta1: "Scopri le Opportunità",
+    cta2: "Parla con Alexandra",
   },
 };
 

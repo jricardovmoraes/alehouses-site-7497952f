@@ -1,5 +1,5 @@
 interface FooterProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -10,6 +10,10 @@ const content = {
   en: {
     rights: "All rights reserved.",
     tagline: "Specialized Real Estate Services",
+  },
+  it: {
+    rights: "Tutti i diritti riservati.",
+    tagline: "Servizi Immobiliari Specializzati",
   },
 };
 

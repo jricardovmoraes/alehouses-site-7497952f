@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Wallet, Shield, Calculator } from "lucide-react";
 
 interface FinancingProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -25,6 +25,16 @@ const content = {
     insuranceText: "Complete advisory for all necessary insurance: life insurance, home insurance and credit insurance. We guarantee the best market conditions.",
     simulation: "Financial Simulation",
     simulationText: "We perform detailed simulations to help you understand the costs involved and plan your investment with security and transparency.",
+  },
+  it: {
+    title: "Finanziamento e Assicurazioni",
+    subtitle: "Soluzioni complete per il tuo investimento",
+    financing: "Finanziamento per Stranieri",
+    financingText: "Offriamo supporto completo nel processo di finanziamento immobiliare, con opzioni personalizzate per investitori stranieri. Anticipo tipico del 20-30% del valore dell'immobile, con termini flessibili e tassi competitivi.",
+    insurance: "Assicurazioni Obbligatorie",
+    insuranceText: "Consulenza completa per tutte le assicurazioni necessarie: assicurazione sulla vita, multirischio abitazione e assicurazione credito. Garantiamo le migliori condizioni di mercato.",
+    simulation: "Simulazione Finanziaria",
+    simulationText: "Effettuiamo simulazioni dettagliate per aiutarti a comprendere i costi coinvolti e pianificare il tuo investimento con sicurezza e trasparenza.",
   },
 };
 

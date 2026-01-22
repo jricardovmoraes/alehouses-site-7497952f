@@ -4,7 +4,7 @@ import { Building2, TrendingDown, Home } from "lucide-react";
 import rehabilitationImage from "@/assets/rehabilitation.jpg";
 
 interface RehabilitationProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -33,6 +33,19 @@ const content = {
     benefit3: "IRS Reduction",
     benefit3Text: "Tax benefits on rental income",
     cta: "Discover ARU Properties",
+  },
+  it: {
+    title: "Riqualificazione Urbana",
+    subtitle: "Investi in aree di valorizzazione",
+    intro: "Le Aree di Riqualificazione Urbana (ARU) offrono eccellenti opportunità di investimento con significativi benefici fiscali.",
+    benefits: "Benefici Fiscali",
+    benefit1: "Riduzione IMT",
+    benefit1Text: "Esenzione o riduzione dell'Imposta Comunale sul Trasferimento Immobiliare",
+    benefit2: "Riduzione IMI",
+    benefit2Text: "Esenzione IMI fino a 5 anni dopo la riqualificazione",
+    benefit3: "Riduzione IRS",
+    benefit3Text: "Benefici fiscali sui redditi da locazione",
+    cta: "Scopri Immobili in ARU",
   },
 };
 

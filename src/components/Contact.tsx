@@ -8,7 +8,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 interface ContactProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -41,6 +41,21 @@ const content = {
     emailLabel: "Email",
     phoneLabel: "Phone",
     locationLabel: "Location",
+  },
+  it: {
+    title: "Contattaci",
+    subtitle: "Siamo pronti ad aiutarti",
+    name: "Nome",
+    email: "Email",
+    phone: "Telefono",
+    message: "Messaggio",
+    send: "Invia Messaggio",
+    success: "Messaggio inviato con successo!",
+    error: "Errore nell'invio del messaggio. Riprova.",
+    contactInfo: "Informazioni di Contatto",
+    emailLabel: "Email",
+    phoneLabel: "Telefono",
+    locationLabel: "Posizione",
   },
 };
 

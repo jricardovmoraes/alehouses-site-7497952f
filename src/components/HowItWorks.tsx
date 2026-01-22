@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Search, FileText, DollarSign, Home, Wrench, CheckCircle } from "lucide-react";
 
 interface HowItWorksProps {
-  language: 'pt' | 'en';
+  language: 'pt' | 'en' | 'it';
 }
 
 const content = {
@@ -37,6 +37,22 @@ const content = {
     step5Text: "Complete support throughout the deed process",
     step6: "Post-Purchase",
     step6Text: "Renovation and property management services (optional)",
+  },
+  it: {
+    title: "Come Funziona",
+    subtitle: "Il Percorso del Cliente",
+    step1: "Consulenza e Analisi del Profilo",
+    step1Text: "Comprendiamo le tue esigenze e obiettivi di investimento",
+    step2: "Selezione Immobili",
+    step2Text: "Presentiamo nuovi lanci, immobili nuovi e edifici riqualificati",
+    step3: "Verifica Documentale",
+    step3Text: "Supporto legale completo e verifica di tutta la documentazione",
+    step4: "Supporto al Credito",
+    step4Text: "Assistenza con finanziamenti immobiliari e assicurazioni",
+    step5: "Atto e Registrazione",
+    step5Text: "Supporto completo durante il processo di rogito",
+    step6: "Post-Acquisto",
+    step6Text: "Servizi di ristrutturazione e gestione patrimoniale (opzionale)",
   },
 };
 
