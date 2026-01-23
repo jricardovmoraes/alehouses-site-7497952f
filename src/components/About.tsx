@@ -87,6 +87,11 @@ export const About = ({ language }: AboutProps) => {
               alt={consultantName}
               className="w-full h-auto rounded-lg shadow-elegant"
             />
+            {language === 'it' && (
+              <p className="mt-4 text-muted-foreground text-center italic">
+                Roberto è un esperto di relazioni internazionali, con esperienza in Europa, Portogallo e altri mercati. Parla portoghese, inglese e italiano e fornisce supporto strutturato agli investitori.
+              </p>
+            )}
           </div>
           <div className="animate-fade-in">
             <p className="text-lg text-foreground mb-6 leading-relaxed">
