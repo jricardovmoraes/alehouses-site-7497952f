@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Shield, Users, TrendingUp, Award } from "lucide-react";
 import alexandraImage from "@/assets/alexandra.jpg";
+import robertoImage from "@/assets/roberto.jpg";
 
 interface AboutProps {
   language: 'pt' | 'en' | 'it';
@@ -59,6 +60,8 @@ const content = {
 
 export const About = ({ language }: AboutProps) => {
   const t = content[language];
+  const consultantImage = language === 'it' ? robertoImage : alexandraImage;
+  const consultantName = language === 'it' ? 'Roberto' : 'Alexandra Betting Chaves';
 
   const values = [
     { icon: Shield, title: t.value1, description: t.value1Text },
@@ -80,8 +83,8 @@ export const About = ({ language }: AboutProps) => {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-slide-in">
             <img
-              src={alexandraImage}
-              alt="Alexandra Betting Chaves"
+              src={consultantImage}
+              alt={consultantName}
               className="w-full h-auto rounded-lg shadow-elegant"
             />
           </div>
