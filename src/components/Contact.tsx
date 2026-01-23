@@ -89,6 +89,8 @@ export const Contact = ({ language }: ContactProps) => {
 
   const instagramHandle = language === 'it' 
     ? "houses.portugal" 
+    : language === 'pt'
+    ? "alehousescurdoriaimobiliaria"
     : "alehouses";
 
   const contactMethods = [
