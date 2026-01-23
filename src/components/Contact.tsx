@@ -79,13 +79,17 @@ export const Contact = ({ language }: ContactProps) => {
     ? "roberto.casi@alehouse.pt" 
     : "ale@alehouses.pt";
 
+  const contactPhone = language === 'it' 
+    ? "+39 335 813 9010" 
+    : "+351 914 986 508";
+
   const locationAddress = language === 'it' 
     ? "Località Chiassa Superiore, 240, 52100 Arezzo AR, Itália" 
     : "Coimbra, Portugal";
 
   const contactMethods = [
     { icon: Mail, label: t.emailLabel, value: contactEmail },
-    { icon: Phone, label: t.phoneLabel, value: "+351 914 986 508" },
+    { icon: Phone, label: t.phoneLabel, value: contactPhone },
     { icon: MapPin, label: t.locationLabel, value: locationAddress },
   ];
 
