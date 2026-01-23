@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -87,10 +87,15 @@ export const Contact = ({ language }: ContactProps) => {
     ? "Località Chiassa Superiore, 240, 52100 Arezzo AR, Itália" 
     : "Coimbra, Portugal";
 
+  const instagramHandle = language === 'it' 
+    ? "houses.portugal" 
+    : "alehouses";
+
   const contactMethods = [
     { icon: Mail, label: t.emailLabel, value: contactEmail },
     { icon: Phone, label: t.phoneLabel, value: contactPhone },
     { icon: MapPin, label: t.locationLabel, value: locationAddress },
+    { icon: Instagram, label: "Instagram", value: `@${instagramHandle}` },
   ];
 
   return (
