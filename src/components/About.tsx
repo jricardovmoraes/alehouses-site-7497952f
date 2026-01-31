@@ -104,6 +104,24 @@ export const About = ({ language }: AboutProps) => {
           </div>
         </div>
 
+        {language === 'en' && (
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="animate-slide-in">
+              <img
+                src={robertoImage}
+                alt="Roberto"
+                className="w-full h-auto rounded-lg shadow-elegant"
+              />
+            </div>
+            <div className="animate-fade-in">
+              <h3 className="text-2xl font-bold text-primary mb-4">Roberto</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Roberto is an expert in international relations, with experience in Europe, Portugal, and other markets. He speaks Portuguese, English, and Italian and provides structured support to investors.
+              </p>
+            </div>
+          </div>
+        )}
+
         <div className="mb-12">
           <h3 className="text-3xl font-bold text-center text-foreground mb-12">
             {t.values}
